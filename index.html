@@ -39,7 +39,11 @@ html {
 
         var diff = moment.duration(weekend.diff(now))
         
-        document.getElementById("demo").innerHTML = 'Nog ' + days + ' dag(en), ' + diff.hours() + ' uur, ' + diff.minutes() + ' minuten, ' + diff.seconds() + ' seconden!';
+        if ( days <== 1 ) {
+            document.getElementById("demo").innerHTML = 'Nog ' + days + ' dag, ' + diff.hours() + ' uur, ' + diff.minutes() + ' minuten, ' + diff.seconds() + ' seconden!';
+        } else {
+         document.getElementById("demo").innerHTML = 'Nog ' + days + ' dag(en), ' + diff.hours() + ' uur, ' + diff.minutes() + ' minuten, ' + diff.seconds() + ' seconden!';   
+        }
     }, 1000);
 </script>
 
