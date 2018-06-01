@@ -39,6 +39,10 @@ html {
 
         var diff = moment.duration(weekend.diff(now))
         
+        if ( diff.hours() >= 8 ) {
+          days = days - 1; 
+        }
+        
         if ( days == 1 ) {
             document.getElementById("demo").innerHTML = 'Nog ' + days + ' dag, ' + diff.hours() + ' uur, ' + diff.minutes() + ' minuten, ' + diff.seconds() + ' seconden!';
         } else if ( days == 0) {
