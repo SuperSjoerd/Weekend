@@ -42,7 +42,7 @@ html {
         if ( days == 1 ) {
             document.getElementById("demo").innerHTML = 'Nog ' + days + ' dag, ' + diff.hours() + ' uur, ' + diff.minutes() + ' minuten, ' + diff.seconds() + ' seconden!';
         } else if ( days == 0) {
-          document.getElementById("demo").innerHTML = 'Nog ' diff.hours() + ' uur, ' + diff.minutes() + ' minuten, ' + diff.seconds() + ' seconden!';   
+          document.getElementById("demo").innerHTML = 'Nog ' + diff.hours() + ' uur, ' + diff.minutes() + ' minuten, ' + diff.seconds() + ' seconden!';   
         } else {
           document.getElementById("demo").innerHTML = 'Nog ' + days + ' dagen, ' + diff.hours() + ' uur, ' + diff.minutes() + ' minuten, ' + diff.seconds() + ' seconden!';   
         }
